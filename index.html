@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Live Streaming</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Home Section -->
+    <div id="home" class="section active">
+      <!-- Live match banner will be inserted here by JS if there's a live match -->
+      
+      <h2 class="section-title">Upcoming Matches</h2>
+      <div id="upcoming-matches">
+        <!-- Upcoming matches will be inserted here by JS -->
+      </div>
+    </div>
+    
+    <!-- Schedule Section -->
+    <div id="schedule" class="section">
+      <h2 class="section-title">Match Schedule</h2>
+      
+      <div class="tournament-selector">
+        <button class="tournament-btn active">All</button>
+        <button class="tournament-btn">Champions Trophy</button>
+        <button class="tournament-btn">WPL</button>
+        <button class="tournament-btn">IPL</button>
+      </div>
+      
+      <div class="schedule-list">
+        <div class="schedule-date">March 1, 2025</div>
+        <div class="match-card">
+          <div class="match-thumbnail placeholder"></div>
+          <div class="match-info">
+            <div class="tournament-name">Champions Trophy</div>
+            <div class="teams">India vs Pakistan</div>
+            <div class="match-time">14:30 IST</div>
+          </div>
+          <button class="reminder-btn">Remind</button>
+        </div>
+        
+        <div class="schedule-date">March 3, 2025</div>
+        <div class="match-card">
+          <div class="match-thumbnail placeholder"></div>
+          <div class="match-info">
+            <div class="tournament-name">Women's Premier League</div>
+            <div class="teams">Mumbai Indians vs Delhi Capitals</div>
+            <div class="match-time">19:30 IST</div>
+          </div>
+          <button class="reminder-btn">Remind</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tournaments Section -->
+    <div id="tournaments" class="section">
+      <h2 class="section-title">Tournaments</h2>
+      
+      <div class="tournament-card">
+        <div class="tournament-logo placeholder"></div>
+        <div class="tournament-info">
+          <div class="tournament-title">ICC Men's Champions Trophy 2025</div>
+          <div class="tournament-dates">Feb 19 - Mar 17, 2025</div>
+        </div>
+      </div>
+      
+      <div class="tournament-card">
+        <div class="tournament-logo placeholder"></div>
+        <div class="tournament-info">
+          <div class="tournament-title">Women's Premier League 2025</div>
+          <div class="tournament-dates">Mar 1 - Mar 25, 2025</div>
+        </div>
+      </div>
+      
+      <div class="tournament-card">
+        <div class="tournament-logo placeholder"></div>
+        <div class="tournament-info">
+          <div class="tournament-title">IPL 2025</div>
+          <div class="tournament-dates">Mar 28 - May 26, 2025</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Profile Section -->
+    <div id="profile" class="section">
+      <h2 class="section-title">Profile</h2>
+      
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar placeholder"></div>
+          <div class="profile-name">Cricket Fan</div>
+        </div>
+        
+        <div class="profile-stats">
+          <div class="stat-item">
+            <div class="stat-value">12</div>
+            <div class="stat-label">Watched</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Reminders</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Favorites</div>
+          </div>
+        </div>
+        
+        <div class="setting-item">
+          <div class="setting-label">Notification Settings</div>
+          <div class="setting-action">Edit</div>
+        </div>
+        
+        <div class="setting-item">
+          <div class="setting-label">Streaming Quality</div>
+          <div class="setting-value">HD</div>
+        </div>
+        
+        <div class="setting-item">
+          <div class="setting-label">About LiveLink Cricket</div>
+          <div class="setting-action">View</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <div class="nav-item active" data-section="home">
+      <span class="nav-icon">🏠</span>
+      Home
+    </div>
+    <div class="nav-item" data-section="schedule">
+      <span class="nav-icon">📅</span>
+      Schedule
+    </div>
+    <div class="nav-item" data-section="tournaments">
+      <span class="nav-icon">🏆</span>
+      Tournaments
+    </div>
+    <div class="nav-item" data-section="profile">
+      <span class="nav-icon">👤</span>
+      Profile
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
